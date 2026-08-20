@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Personal Portfolio</title>
+  <link rel="stylesheet" href="prototype.css" />
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="logo">MyPortfolio</div>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <button id="theme-toggle" class="btn">🌙 Dark Mode</button>
+  </nav> 
+
+  <!-- Hero Section -->
+  <header class="hero">
+    <img src="C:\Users\LENOVO\OneDrive\Desktop\desk\image.jpeg" alt="Profile photo" class="profile-img" />
+    <h1>Hi, I'm <span class="highlight">Preksha shetty</span></h1>
+    <p class="tagline">Aspiring Web Developer & Tech Enthusiast</p>
+    <a href="https://github.com/iprekshashetty" target="_blank" rel="noopener noreferrer" class="btn primary-btn">View My GitHub</a>
+  </header>
+
+  <main class="container">
+    <!-- About Section -->
+    <section id="about" class="card">
+      <h2>About Me</h2>
+      <p>Engineering student and web developer dedicated to building responsive interfaces and robust code. Enthusiastic about tackling complex coding problems and transforming creative concepts into functional web applications.</p>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="card">
+      <h2>Education</h2>
+      <div class="item">
+        <h3>Bachelor of Engineering in Artificial Engineering and Machine Learning </h3>
+        <p class="subtext">Sahyadri College of Engineering and Management</p>
+        <p>Focused on core computer science fundamentals, data structures, and web technologies.</p>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="card">
+      <h2>Skills</h2>
+      <div class="skills-grid">
+        <span class="badge">HTML5</span>
+        <span class="badge">CSS3</span>
+        <span class="badge">JavaScript</span>
+        <span class="badge">Python</span>
+        <span class="badge">Git & GitHub</span>
+        <span class="badge">C-language</span>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="card">
+      <h2>Projects</h2>
+      <div class="projects-grid">
+        <div class="project-card">
+          <h3>Interactive Web App</h3>
+          <p>A responsive web project built using core JavaScript DOM manipulation and modern CSS layouts.</p>
+          <a href="#" class="text-link">Live Demo &rarr;</a>
+        </div>
+        <div class="project-card">
+          <h3>Algorithm Visualizer</h3>
+          <p>A simple visual breakdown of search and sort algorithms written in pure JavaScript.</p>
+          <a href="#" class="text-link">Live Demo &rarr;</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="card">
+      <h2>Contact Me</h2>
+      <form id="contact-form">
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input type="text" id="name" placeholder="Your Name" required />
+        </div>
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea id="message" rows="4" placeholder="Your Message" required></textarea>
+        </div>
+        <button type="submit" class="btn primary-btn">Send Message</button>
+      </form>
+      <p id="form-feedback" class="feedback-msg"></p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Preksha. Built with HTML, CSS, and JS.</p>
+  </footer>
+
+  <script src="prototype.js"></script>
+</body>
+</html>
